@@ -2,7 +2,7 @@
     <h2 class="bg-blue-200 text-xl font-bold py-4 text-center -mx-6 -mt-6">Create a new snow day broadcast</h2>
 
     <div class="px-4 pt-8 pb-4">
-        <form action="{{ route('snow-days.store') }}" method="post">
+        <form action="{{ route('broadcasts.store') }}" method="post">
             @csrf
 
             <div class="mb-8">
