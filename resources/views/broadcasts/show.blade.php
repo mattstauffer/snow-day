@@ -20,7 +20,7 @@
                 <div class="w-[735px] mt-[205px] overflow-hidden relative mx-auto">
                     <div id="video-wrapper relative">
                         <video class="w-full" autoplay muted loop>
-                            <source src="/video/movie.mp4" type="video/mp4">
+                            <source src="/video/news-desk.mp4" type="video/mp4">
                         </video>
 
                         <marquee class="select-none bg-red-700 text-white px-3 py-1 absolute bottom-4">
