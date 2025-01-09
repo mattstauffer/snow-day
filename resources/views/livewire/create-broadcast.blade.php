@@ -32,7 +32,7 @@
     </div>
 
     <div class="mt-6 border-t -mx-6">
-        <div class="my-4 text-gray-500 ml-6">PREVIEW:</div>
+        <div class="my-4 text-gray-400 ml-6 font-bold text-sm">PREVIEW:</div>
 
         <marquee class="select-none bg-red-700 text-white px-3 py-1 block">
             @php
