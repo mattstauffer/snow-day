@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Actions\LogCreatedBroadcast;
 use App\Models\Broadcast;
 use Livewire\Component;
 
@@ -32,6 +33,8 @@ class CreateBroadcast extends Component
             'date' => $validated['date'],
             'shortname' => $validated['shortname'],
         ]);
+
+        (new LogCreatedBroadcast)($broadcast);
 
         return redirect()->to(route('broadcasts.show', $broadcast));
     }
