@@ -19,7 +19,7 @@
             <div class="md:bg-[url('/tv.png')] bg-center bg-contain bg-no-repeat w-full md:w-[1024px] h-[924px]">
                 <div class="md:w-[735px] mt-[205px] overflow-hidden relative mx-auto">
                     <div id="video-wrapper relative">
-                        <video class="w-full" autoplay muted loop>
+                        <video class="w-full" autoplay muted loop playsinline>
                             <source src="/video/news-desk.mp4" type="video/mp4">
                         </video>
 
