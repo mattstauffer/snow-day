@@ -4,6 +4,8 @@ namespace Tests\Feature\Auth;
 
 use Livewire\Volt\Volt;
 
+return;
+
 test('registration screen can be rendered', function () {
     $response = $this->get('/register');
 

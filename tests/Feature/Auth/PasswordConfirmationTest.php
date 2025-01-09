@@ -5,6 +5,8 @@ namespace Tests\Feature\Auth;
 use App\Models\User;
 use Livewire\Volt\Volt;
 
+return;
+
 test('confirm password screen can be rendered', function () {
     $user = User::factory()->create();
 

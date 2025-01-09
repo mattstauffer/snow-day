@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Broadcast>
@@ -17,7 +18,10 @@ class BroadcastFactory extends Factory
     public function definition(): array
     {
         return [
-            // @todo
+            'school_district' => $district = fake()->company(),
+            'canceled' => fake()->boolean(),
+            'date' => now()->addDays(rand(0, 3)),
+            'shortname' => Str::slug($district),
         ];
     }
 }

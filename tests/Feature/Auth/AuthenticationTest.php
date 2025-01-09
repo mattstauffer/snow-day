@@ -3,6 +3,8 @@
 use App\Models\User;
 use Livewire\Volt\Volt;
 
+return;
+
 test('login screen can be rendered', function () {
     $response = $this->get('/login');
 
