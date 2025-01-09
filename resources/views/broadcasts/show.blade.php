@@ -23,7 +23,7 @@
                             <source src="/video/movie.mp4" type="video/mp4">
                         </video>
 
-                        <marquee class="select-none bg-gray-800 text-white px-3 py-1 absolute bottom-4">
+                        <marquee class="select-none bg-red-700 text-white px-3 py-1 absolute bottom-4">
                             {{ strtoupper($broadcast->school_district) }} UPDATE:
                             @if ($broadcast->canceled)
                                 School has been canceled because of snow for {{ $broadcast->date->format('F j, Y')}}! Turn on the cartoons!
