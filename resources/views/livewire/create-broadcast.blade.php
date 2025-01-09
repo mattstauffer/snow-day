@@ -27,7 +27,7 @@
                 @error('shortname')<div class="text-red-500">{{ $message }}</div>@enderror
             </div>
 
-            <button type="submit" class="border px-3 py-2 hover:bg-blue-100 hover:cursor-pointer font-bold">Create broadcast</button>
+            <button type="submit" class="px-4 py-2 bg-blue-100 dark:bg-blue-900 rounded hover:bg-blue-200 dark:hover:bg-blue-600 border border-blue-500 dark:border-blue-700 text-lg dark:text-white cursor-pointer">Create broadcast</button>
         </form>
     </div>
 

@@ -21,8 +21,8 @@
         @endif
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#000] md:bg-[#c2bcb3]">
-            <div class="md:bg-[url('/tv.png')] bg-center bg-contain bg-no-repeat w-full md:w-[1024px] h-[924px]">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#000] light:md:bg-[#c2bcb3]">
+            <div class="light:md:bg-[url('/tv.png')] dark:md:bg-[url('/tv-black.png')] bg-center bg-contain bg-no-repeat w-full md:w-[1024px] h-[924px]">
                 <div class="md:w-[735px] mt-[205px] overflow-hidden relative mx-auto">
                     <div id="video-wrapper relative">
                         <video class="w-full" autoplay muted loop playsinline>
