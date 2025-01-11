@@ -1,4 +1,13 @@
 <div>
+    @script
+    <script>
+        $wire.on('broadcast-created', event => {
+            if (fathom) {
+                fathom.trackGoal('{{ config('services.fathom.create_broadcast_event_id') }}');
+            }
+        });
+    </script>
+    @endscript
     <div class="px-4 pt-8 pb-4">
         <form wire:submit="save">
             <div class="mb-8">

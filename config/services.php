@@ -37,7 +37,7 @@ return [
 
     'fathom' => [
         'id' => env('FATHOM_SITE_ID'),
-        'key' => env('FATHOM_API_KEY'),
+        'create_broadcast_event_id' => 'GFFLIFNF',
     ],
 
 ];

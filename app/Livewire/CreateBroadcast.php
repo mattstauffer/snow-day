@@ -2,7 +2,6 @@
 
 namespace App\Livewire;
 
-use App\Actions\LogCreatedBroadcast;
 use App\Models\Broadcast;
 use Livewire\Component;
 
@@ -34,7 +33,7 @@ class CreateBroadcast extends Component
             'shortname' => $validated['shortname'],
         ]);
 
-        (new LogCreatedBroadcast)($broadcast);
+        $this->dispatch('broadcast-created', ['school_district' => $broadcast->school_district]);
 
         return redirect()->to(route('broadcasts.show', $broadcast));
     }
