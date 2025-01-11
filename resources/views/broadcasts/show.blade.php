@@ -22,7 +22,7 @@
     </head>
     <body class="font-sans text-gray-900 antialiased bg-[#000] md:bg-[#c2bcb3] dark:md:bg-[#000]">
         <div class="min-h-screen flex flex-col items-center md:pt-6">
-            <div class="md:bg-[url('/tv.png')] dark:md:bg-[url('/tv-black.png')] bg-center bg-contain bg-no-repeat w-full md:w-[1024px] h-[924px] flex flex-col items-center ">
+            <div class="md:bg-[url('/tv.png')] dark:md:bg-[url('/tv-black.png')] bg-center bg-contain bg-no-repeat w-full md:w-[1024px] md:h-[924px] flex flex-col items-center ">
                 <div class="md:w-[735px] md:mt-[205px] overflow-hidden relative mx-auto my-auto">
                     <video class="w-full" autoplay muted loop playsinline>
                         <source src="/video/news-desk.mp4" type="video/mp4">
