@@ -21,15 +21,16 @@
         @endif
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100  dark:bg-gray-900">
-            <div>
-                <a href="/" wire:navigate>
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
-            </div>
-
-            <div class="w-full sm:max-w-lg mt-6 px-6 py-6 bg-white dark:bg-blue-100 shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-mint-300 dark:bg-gray-900">
+            <div class="w-full sm:max-w-lg mt-6">
+                <div class="">
+                    <a href="/" wire:navigate>
+                        <img src="/snow-hill-sledders.png" alt="Snow Day">
+                    </a>
+                </div>
+                <div class="px-6 py-6 bg-white dark:bg-gray-100 shadow-md overflow-hidden">
+                    {{ $slot }}
+                </div>
             </div>
         </div>
     </body>
