@@ -30,10 +30,15 @@
 
                     <marquee class="select-none bg-red-700 text-white px-3 py-1 absolute bottom-4">
                         {{ strtoupper($broadcast->school_district) }} UPDATE:
-                        @if ($broadcast->canceled)
-                            School has been canceled because of snow for {{ $broadcast->date->format('F j, Y')}}! Turn on the cartoons!
+
+                        @if (now()->gt($broadcast->date))
+                            @if ($broadcast->canceled)
+                                School has been canceled because of snow for {{ $broadcast->date->format('F j, Y')}}! Turn on the cartoons!
+                            @else
+                                Sorry, kids, school has <strong>not</strong> been canceled for {{ $broadcast->date->format('F j, Y')}}.
+                            @endif
                         @else
-                            Sorry, kids, school has <strong>not</strong> been canceled for {{ $broadcast->date->format('F j, Y')}}.
+                            Check back on the {{ $broadcast->date->format('jS')}} to see whether school is canceled.
                         @endif
                     </marquee>
                 </div>
